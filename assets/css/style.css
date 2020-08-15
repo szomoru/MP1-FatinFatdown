@@ -11,14 +11,20 @@
 }
 
 .bg-color-header-footer {
-    background-color: #6d4c41b9;
+    background-color: #8eacbbc5;
 }
 
 .bg-color-section {
     background-color: #40241ab9;
 }
 
+.bg-color-fatin {
+    background-color: #ffb84dc4;
+}
 
+.bg-color-fatin-menu {
+    background-color: #ffb74d;
+}
 
 /*----------------------------------Special paddings/margins/text */
 
@@ -52,7 +58,7 @@
 }
 
 .txt-fatin {
-    color: #ef6c00;
+    color: #f57c00;
     background-color: #424242;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -65,7 +71,7 @@
 
 .txt-fatdown {
     color: #424242;
-    background-color: #ef6c00;
+    background-color: #f57c00;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     padding-right: 10px;
@@ -157,6 +163,18 @@ h5 {
     border-radius: 25px;   
 }
 
+.border-sec-menu {
+    border-style: initial;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.border-sec-detail {
+    border-style: initial;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
 #sec-fatin {
     color:#c25e00;
 }
@@ -173,7 +191,7 @@ h5 {
     max-width: 100px;
     border-style: initial;
     border-radius: 10px;
-    background-color: #9c786c;
+    background-color: #424242;
 }
 
 .menuitem a {
@@ -186,8 +204,7 @@ h5 {
     display: block;
     color:#ffffff;
     padding-top: 22px;
-    padding-bottom: 5px;
-    text-align: center;    
+    padding-bottom: 5px;   
 }
 
 .menuitem span {
@@ -274,7 +291,7 @@ h5 {
 
 .txt-brd-subscribe-social {
     padding: 5px 20px;
-    background-color:  #40241a;
+    background-color:  #424242;
     border-style: initial;
     border-radius: 15px;
     margin-top: 20px;
@@ -309,7 +326,7 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background: #9c786c;
+    background: #424242;
     transition: all 0.1s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -317,7 +334,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: #ffbc45;
+    background: #ef6c00;
 }
 
 .form-control {
@@ -331,21 +348,87 @@ footer {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-style: initial;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
 }
 
 .btn {
-    border-radius: 0rem;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
     font-size: .6rem;
-    font-weight: 600;    
+    font-weight: 600; 
+    border-style: initial; 
+    
+}
+
+.btn-warning {
+    background-color:#495057;
+    border-style: initial;
+    color: #fafafa;
+    font-weight: 700;
 }
 
 /*----------------- Hoover -----------------*/
 
 .hvr-sweep-to-bottom:before {
-    background-color: #ffbc45;
+    background-color: #ef6c00;
     min-height: auto;
     border-radius: 10px;
 }
+
+/* --------------------- Fatin.html -----------------*/
+
+    /* ------text color ------*/
+
+    #sec-fatin-menu {
+    color: #ffffff;
+    }
+
+    #sec-fatin-sub {
+    color: #000000;
+    }
+
+    /* ------Menu ------*/
+
+    #sec-fatin-menu{
+        padding: 0;
+        min-height: 300px;
+    } 
+
+    .fatin-menu-list {
+        padding-top: 10px;
+        padding-left: 10px;
+        text-align: left;
+        list-style: none;
+        color: #fafafa; 
+        max-width: 360px;
+    }
+
+    .fatin-menu-list-item {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        text-align: left;
+        color: #fafafa;
+    }
+
+    .fatin-menu-list a {
+        text-decoration: none;
+        color: #fafafa;
+    }
+
+    .fatin-menu-list a:hover {
+        padding: 7px;
+        color: #495057;
+    }
+
+        /* ---------------- fatin_kd.html -------------------*/
+
+        .active-list-item {
+            padding: 7px;
+            color: #495057;
+        }
