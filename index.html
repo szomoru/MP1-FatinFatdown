@@ -13,10 +13,10 @@
 
 <body class="bg-body">
 
-    <header class="container-fluid">   
-        <div class="row no-gutters bg-color-header-footer border">
+    <header>   
+        <div class="row no-gutters bg-color-header-footer border-all">
         
-            <div class="col-md-2 border bg-body">
+            <div class="col-md-2 border-all bg-body">
                 <a href="index.html">
                     <div class="row logo"></div>
                 </a>  
@@ -26,37 +26,31 @@
             </div>
         
             <div class="col-md-10">
-                <div class="row no-gutters">
-                    <div class="col">
-                        <ul id="nav" class="list-inline">
-                            <li class="col-6 col-sm-3 menuitem list-inline-item hvr-sweep-to-bottom">
+                    
+                        <ul id="nav" class="nav-container">
+                            <li class="menuitem hvr-sweep-to-bottom">
                                 <a href="aboutme.html"><i class="fas fa-user" aria-hidden="true"></i><span>About Me</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 menuitem list-inline-item hvr-sweep-to-bottom">
+                            <li class="menuitem hvr-sweep-to-bottom">
                                 <a href="fatin.html"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span>FatIn</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 menuitem list-inline-item hvr-sweep-to-bottom">
+                            <li class="menuitem hvr-sweep-to-bottom">
                                 <a href="fatdown.html"><i class="fas fa-chevron-circle-down" aria-hidden="true"></i><span>FatDown</span></a>
                             </li>
-                            <li class="col-6 col-sm-3 menuitem list-inline-item hvr-sweep-to-bottom">
+                            <li class="menuitem hvr-sweep-to-bottom">
                                 <a href="fatdown.html"><i class="fas fa-spinner" aria-hidden="true"></i><span>Progress</span></a>
                             </li>
                         </ul>
-                    </div>
-                </div>
+                    
             </div>
         </div>
     </header>
 
     
-    <section class="container-fluid">
-        <div class="row">
-            <div id="sec-fatin" class="col-sm-6 border bg-img-fatin">
-                <div class="row">
-                    <div class="col-6">
-                    </div> 
-                    <div class="col-6">
-                        
+    <section class=" section-container">
+        <div class="fatin-grid bg-img-fatin">
+                    <div id="sec-fatin" class="row"> 
+                        <div class="col">
                             <h3>EAT Fat</h3>
                             <ul class="eatfat-list">
                                 <li class="sec-list-item"><i class="fas fa-hamburger" aria-hidden="true"></i>Keto Basics</li>
@@ -65,15 +59,16 @@
                                 <li class="sec-list-item"><i class="fas fa-hamburger" aria-hidden="true"></i>Keto Shopping Lists</li>
                                 <li class="sec-list-item">... and more</li>
                             </ul>
-                        
-                    </div>           
-                </div>
-            </div>
+                        </div>           
+                    </div>
+                
             
-            <div id="sec-fatdown" class="col-sm-6 border bg-img-fatdown">
-                <div class="row">
-                    <div class="col-6">
-                        <h3>Burn Fat</h3>
+        </div>
+        <div class="fatdown-grid bg-img-fatdown">
+                
+                    <div id="sec-fatdown" class="row">
+                        <div class="col">
+                            <h3>Burn Fat</h3>
                             <ul class="burnfat-list">
                                 <li class="sec-list-item"><i class="fas fa-dumbbell" aria-hidden="true"></i>Working out on Keto</li>
                                 <li class="sec-list-item"><i class="fas fa-dumbbell" aria-hidden="true"></i>Online Workout Programs</li>
@@ -81,19 +76,16 @@
                                 <li class="sec-list-item"><i class="fas fa-dumbbell" aria-hidden="true"></i>Workout I use</li>
                                 <li class="sec-list-item">... and more</li>
                             </ul>
+                        </div>
                     </div>
-                    <div class="col-6">
-                    </div>
-                </div>
-            </div>
+                
             
-        </div>
-         
+        </div>    
     </section>
 
     
-    <footer class="container-fluid">
-        <div id="footer" class="row border bg-color-header-footer">
+    <footer class="footer-grid">
+        <div id="footer" class="row border-all bg-color-header-footer">
            <div class="col-sm-6">
             <div class="row">
                 <div class="uppercase general-sub"><span class="txt-brd-subscribe-social">Newsletter</span></div>
