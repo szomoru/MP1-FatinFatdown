@@ -1,36 +1,201 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Permanent Marker:100,200,300,400,500,600,700');
 
-/*----------------- GRID TEMPLATE MAIN PAGE SECTION AREA------------------*/
 
-.fatin-grid {
-    grid-area: fatin; 
-    margin-left: 10px; 
-}
+/* -----------------------  INDEX TEMPLATE ----------------------------*/
 
-.fatdown-grid {
-    grid-area: fatdown;
-    margin-right: 10px; 
-}
-
-.section-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 75vh;
-    grid-template-areas: "fatin fatdown"
-}
-
-/*----------------- GRID TEMPLATE SUB- PAGE SECTION AREA ------------------*/
-
-
-/*----------------- Colours -----------------*/
-
-.bg-body {
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
     text-align: center;
     background-image: url("../images/brick-wall-dark.png");
     background-color: #cfd8dc41;
     background-repeat: repeat;
     background-size: unset;
 }
+
+
+
+.row-header {  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px 5px 10px;
+    background-color: #8eacbbc5;
+    border-radius: 25px;
+}
+
+.header-logo {
+    flex: 15%;
+    margin: 0;
+}
+
+.header-nav {
+    flex: 85%;
+    margin: 0;
+}
+
+
+
+.row-section {  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 10px 5px 10px;
+    min-height: 75vh;
+    border-radius: 25px;
+}
+
+.row-section-progress {  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 10px 5px 10px;
+    min-height: 75vh;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+.row-section-uc {  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px 5px 10px;
+    min-height: 75vh;
+    border-radius: 25px;
+    background: repeating-linear-gradient(
+                45deg,
+                #cabf45,
+                #cabf45 50px,
+                #212121 50px,
+                #212121 100px);
+}
+
+.img-section-left {
+    background: url("../images/louis-hansel-shotsoflouis-Keto_Fatin.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-section-right {
+    background: url("../images/content-pixie-workpout_fatdown.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-left {
+    flex: 49%;
+    border-radius: 25px;
+    margin: 0 5px 0 0;
+}
+
+
+.section-progress-bottom {
+    flex: 100%;
+    border-radius: 25px;
+    margin: 5px 0 0 0;
+}
+
+.section-progress-top {
+    flex: 100%;
+    border-radius: 25px;
+    margin: 0 0 5px 0;
+}
+
+
+.section-right {
+    flex: 49%;
+    border-radius: 25px;
+    margin: 0 0 0 5px; 
+}
+
+
+
+.row-footer {  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 10px 10px 10px;
+    background-color: #8eacbbc5;
+    border-radius: 25px;
+}
+
+.footer-signup {
+    flex: 50%;
+}
+
+.footer-signup p{
+    text-align: center;
+    margin: 0;
+}
+
+.footer-social {
+    flex: 50%;
+}
+
+.form-inline {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.progress-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c30000;
+    height: fit-content;
+    width: fit-content;
+    color:#fafafa;
+    font-size: 5rem;
+    border-radius: 25px;
+    padding:25px;
+}
+
+.text-box h4,
+.text-box h5 {
+    margin: 10px;
+}
+
+/* -----------------------  SUB PAGE TEMPLATES ----------------------------*/
+
+.section-left-sub {
+    flex: 10%;
+    margin: 0 5px 0 0;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.section-right-sub {
+    flex: 80%;
+    margin: 0 0 0 5px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+
+
+/* -----------------------  SIGNUP-BOX POSITION ----------------------------*/
+
+
+
+
+
+
+
+
+
+/*----------------- Colours -----------------*/
+
 
 .bg-color-header-footer {
     background-color: #8eacbbc5;
@@ -54,6 +219,10 @@
 
 .bg-color-fatdown-menu {
     background-color: #a4a4a4;
+}
+
+.bg-color-progress {
+    background-color:#546e7a;
 }
 
 /* -------------------------------- BORDERS ------------------------------------*/
@@ -87,6 +256,22 @@
     border-bottom-left-radius: 25px;
 }
 
+
+
+
+
+.progress-img {
+    padding: 0;
+    margin: 15px;
+    align-self: center;
+    justify-self: center;
+}
+
+.progress-img img{
+    max-width: 500px;
+}
+
+
 /*----------------------------------Special paddings/margins/text */
 
 .title {
@@ -94,7 +279,7 @@
     font-weight: 100;
     font-size: 13px;
     letter-spacing: 1px;
-    padding: 0;
+    padding: 10px;
     display: block;
 }
 
@@ -164,8 +349,24 @@ h3 {
 
 h4, 
 h5 {
-    margin: 0;
+    margin: 0;a
     font-family: 'Lato', sans-serif;
+}
+
+.text h1 {
+    padding-bottom: 30px;
+}
+
+p {
+    font-family: 'Lato', sans-serif; 
+    text-align: justify;
+    color: #424242;
+    letter-spacing: 2px;
+    /*padding-top: 2rem;
+    padding-bottom: 2rem;*/
+    font-weight: 700; 
+    text-transform: uppercase;
+    
 }
 
 .uppercase {
@@ -178,15 +379,12 @@ h5 {
     font-weight: 700;
     letter-spacing: 2px;
     color: #fafafa;
+    padding:20px;
 }
+
 /*----------------- Header -----------------*/
 
-.row {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;;
-    margin-right: 10px;
-}
+
 
 .logo {
     background: url("../images/Logo_transparent.png");
@@ -197,14 +395,46 @@ h5 {
     min-height: 80px;
 }
 
-
-
-#sec-fatin {
+.sec-fatin {
+    display: flex;
+    height:75vh;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 3rem;
     color:#c25e00;
 }
 
+.sec-fatdown {
+    display: flex;
+    height:75vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    color:#424242;
+}
+
+.sec-progress {
+    display: flex;
+    height:75vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color:#424242;
+}
 
 .nav-container {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.table-container {
     display: flex;
     height: 100%;
     padding: 0;
@@ -233,7 +463,26 @@ ul {
     background-color: #424242;
 }
 
+.menuitem-progress {
+    display: flex;
+    flex-flow: column wrap;
+    height: 10vh;
+    align-content: space-around;
+    justify-content: center;
+    margin: 15px;
+    border-style: initial;
+    border-radius: 15px;
+    background-color:#7f0000;
+}
 
+.menuitem-progress a {
+    width: fit-content;
+    margin:15px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
+    color:#ffffff;  
+}
 
 .menuitem a {
     width: 120px;
@@ -250,21 +499,28 @@ ul {
     font-weight: 400;
     font-size: 14px;
     padding: 5px;
-    letter-spacing: 3px;
-    
+    letter-spacing: 3px;  
+}
+
+.menuitem-progress span {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 0;
+    letter-spacing: 3px;  
 }
 
 /*----------------- Section -----------------*/
 
-.bg-img-fatin{
+/*.bg-img-fatin{
     background: url("../images/louis-hansel-shotsoflouis-Keto_Fatin.jpg");
     text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-style: initial;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
 }
 
 .bg-img-fatdown {
@@ -274,24 +530,18 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     border-style: initial;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-#sec-fatin h3 {
-    margin-bottom: 10px;
-}
+}*/
 
 .eatfat-list {
-    text-align: left;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .burnfat-list {
     text-align: left;
     margin-left: 20px;
 }
-
 
 .sec-list-item {
     font-size: 15px;
@@ -322,16 +572,20 @@ ul {
 
 footer {
     color: #fafafa;
-    min-height: 120px;
+    height: 120px;
     margin: 0;
+    text-align: left;
+    
 }
 
 #footer {
-    padding: 10px;
-    text-align: left;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 120px;
 }
 
-#footer h5 {
+footer h5 {
     color: #ffffff;
 }
 
@@ -365,10 +619,10 @@ footer {
 
 .form-control {
     display: block;
-    width: 100%;
+    width: 50vw;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
-    font-size: .6rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
@@ -387,10 +641,10 @@ footer {
     border-bottom-left-radius: 0.7rem;
     border-top-right-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
-    font-size: .6rem;
+    font-size: 1rem;
     font-weight: 600; 
     border-style: initial; 
-    
+  
 }
 
 .btn-warning {
@@ -400,6 +654,8 @@ footer {
     font-weight: 700;
 }
 
+
+
 /*----------------- Hover -----------------*/
 
 .hvr-sweep-to-bottom:before {
@@ -407,6 +663,9 @@ footer {
     min-height: auto;
     border-radius: 10px;
 }
+
+
+
 
 /* --------------------- Fatin.html -----------------*/
 
@@ -438,17 +697,13 @@ footer {
         text-align: left;
         list-style: none;
         color: #fafafa; 
-        max-width: 360px;
     }
 
     .fatdown-menu-list {
-        padding-top: 10px;
+        padding-top: 20px;
         padding-left: 10px;
-        text-align: left;
-        list-style: none;
-        color: #fafafa; 
-        max-width: 360px;
-        display: none;
+        text-align: center;
+        list-style: none;        
     }
 
     .fatin-menu-list-item {
@@ -456,6 +711,18 @@ footer {
         font-size: 1rem;
         text-align: left;
         color: #fafafa;
+    }
+
+    .fatdown-menu-list-item {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .fatdown-menu-list-item img {
+        border-radius: 10px;
+    }
+    
+    .fatdown-menu-list-item img:hover {
+        transform: scale(1.2);
     }
 
     .fatin-menu-list a {
@@ -468,6 +735,12 @@ footer {
         color: #495057;
     }
 
+
+    .menuitem-progress:hover {
+        transform: scale(1.2);
+        transition: all 0.25s ease-in-out;
+    }
+
         /* ---------------- fatin_kd.html -------------------*/
 
         .active-list-item {
@@ -475,7 +748,25 @@ footer {
             color: #495057;
         }
 
+        /* ------------------ fatin_foodlist_meat Images -----------------*/
 
+        #sec-fatin-sub .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        
+        .img-column {
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 4px;
+        }
+
+        .img-column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 50%;
+        }
 
 
 
@@ -489,19 +780,34 @@ footer {
     color: #495057
 }
 
-.text h5 {
-    text-align: justify;
+.text p {
+    text-align: center;
     color: #757575;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    
 }
+
+.text span {
+    background-color: #7f0000;
+    color: #fafafa;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.section-progress-top .text p {
+    color: #fafafa;
+}   
 
 
 /* ---------------- SECTION SIGNUP ----------------*/
-
+.section-height {
+    height: 75vh;
+}
 .signup-container {
     display: flex;
     justify-content: center;
+    max-height:initial
 }
 
 
@@ -513,13 +819,13 @@ footer {
 form {
     border: initial;
     border-radius: 25px;
-    background-color: #373737;
-
+    background-color: #373737;    
 }
 
 /* Add some padding and a grey background color to containers */
 .container {
   padding: 20px;
+  max-width: 70%;
 }
 
 /* Style the input elements and the submit button */
@@ -530,8 +836,7 @@ input[type=text], input[type=submit] {
   display: inline-block;
   border: initial;
   border-radius: 10px;
-  box-sizing: border-box;
-  
+  box-sizing: border-box; 
 }
 
 /* Add margins to the checkbox */
@@ -565,32 +870,133 @@ input[type=submit]:hover {
         width: 60px;
     }
 
-    .section-container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: "fatin" 
-                            "fatdown"
+        
+    .img-column {
+        flex: 100%;
+        max-width: 100%;
     }
 
-    .fatin-grid {
+   
+    .sec-menu-grid {
         margin-right: 10px; 
     }
 
-    .fatdown-grid {
-        margin-left: 10px; 
+    .sec-detail-grid {
+        margin-left: 10px;
+        height: 75vh; 
     }
 
-    .bg-img-fatin {
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 0px;
+    .form-control {
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 
-    .bg-img-fatdown {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+    #footer-signup-symbol {
+        display: none;
     }
     
+    #footer-signup-text {
+        display: none;
+    }
+
+    #footer-social-symbol {
+        display: none;
+    }
+
+    #footer-social-text {
+        padding-bottom: 0px;
+    }
+
+    .row-footer {
+        flex-direction: column;
+    }
+
+    .row-section {
+        flex-direction: column;
+    }
+
+    .section-left-sub {
+        margin:  0 0 5px 0;
+    }
+
+    .section-right-sub {
+        margin:  5px 0 0 0;
+    }
+
+    .table-container {
+        flex-direction: column;
+    }
+
+    .menuitem-progress a {
+    width: 35vw;
+    }
+
+    .text p {
+    font-size: .6rem;
+    line-height: 2;
+    font-weight: 400;
+    }
+
+    .progress-img img{
+    max-width: 200px;
+    }
+
+}
+
+
+
+
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vmin;
+  padding: 0;
+}
+
+.photo-gallery li {
+  height: 40vh;
+  flex-grow: 1;
+  margin: 2vmin;
+  list-style: none;
+}
+
+.photo-gallery li:last-child {
+  flex-grow: 10;
+}
+
+.photo-gallery img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: fill;
+  vertical-align: bottom;
+  border-radius: 1vmin;
+  text-align: center;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .photo-gallery li {
+    height: 30vh;
+  }
+}
+@media (max-height: 480px) {
+  .photo-gallery li {
+    height: 80vh;
+  }
+}
+@media (max-aspect-ratio: 1 / 1) and (max-width: 480px) {
+  .photo-galleryul {
+    flex-direction: row;
+  }
+
+  .photo-gallery li {
+    height: auto;
+    width: 100%;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
 }
